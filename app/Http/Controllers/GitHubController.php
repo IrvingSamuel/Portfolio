@@ -11,13 +11,19 @@ class GitHubController extends Controller
     {
         $data = Cache::store('file')->remember('github_stats', 3600, function () {
             $username = 'IrvingSamuel';
+            $token = config('services.github.token');
 
-            $userResponse = Http::get("https://api.github.com/users/{$username}");
-            $reposResponse = Http::get("https://api.github.com/users/{$username}/repos", [
+            $http = Http::withHeaders(array_filter([
+                'Accept' => 'application/vnd.github.v3+json',
+                'Authorization' => $token ? "Bearer {$token}" : null,
+            ]));
+
+            $userResponse = $http->get("https://api.github.com/users/{$username}");
+            $reposResponse = $http->get("https://api.github.com/users/{$username}/repos", [
                 'per_page' => 100,
                 'sort' => 'updated',
             ]);
-            $eventsResponse = Http::get("https://api.github.com/users/{$username}/events/public", [
+            $eventsResponse = $http->get("https://api.github.com/users/{$username}/events/public", [
                 'per_page' => 100,
             ]);
 

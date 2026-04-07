@@ -73,23 +73,40 @@
 
             {{-- Contact Form --}}
             <div class="reveal glass rounded-xl p-8" style="transition-delay: 0.1s">
-                <form action="mailto:sync.irvingsamuel@gmail.com" method="GET" class="space-y-5">
+                @if(session('success'))
+                    <div class="mb-5 p-4 rounded-lg bg-green-500/10 border border-green-500/30 text-green-400 text-sm">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if($errors->any())
+                    <div class="mb-5 p-4 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+                        <ul class="list-disc list-inside space-y-1">
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                <form action="{{ route('contact.send') }}" method="POST" class="space-y-5">
+                    @csrf
                     <div>
                         <label for="contact-name" class="block text-sm font-medium mb-2">Nome</label>
-                        <input type="text" id="contact-name" name="subject" placeholder="Seu nome"
+                        <input type="text" id="contact-name" name="name" placeholder="Seu nome" value="{{ old('name') }}" autocomplete="name"
                                class="w-full px-4 py-3 rounded-lg bg-dark-tertiary border border-dark-border text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary/30 transition-colors">
                     </div>
 
                     <div>
                         <label for="contact-email" class="block text-sm font-medium mb-2">Email</label>
-                        <input type="email" id="contact-email" placeholder="seu@email.com"
+                        <input type="email" id="contact-email" name="email" placeholder="seu@email.com" value="{{ old('email') }}" autocomplete="email"
                                class="w-full px-4 py-3 rounded-lg bg-dark-tertiary border border-dark-border text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary/30 transition-colors">
                     </div>
 
                     <div>
                         <label for="contact-message" class="block text-sm font-medium mb-2">Mensagem</label>
-                        <textarea id="contact-message" name="body" rows="5" placeholder="Sua mensagem..."
-                                  class="w-full px-4 py-3 rounded-lg bg-dark-tertiary border border-dark-border text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary/30 transition-colors resize-none"></textarea>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Sua mensagem..."
+                                  class="w-full px-4 py-3 rounded-lg bg-dark-tertiary border border-dark-border text-text-primary placeholder-text-muted text-sm focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary/30 transition-colors resize-none">{{ old('message') }}</textarea>
                     </div>
 
                     <button type="submit" class="btn-primary w-full flex items-center justify-center gap-2">

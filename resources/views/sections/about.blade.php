@@ -21,7 +21,7 @@
 
                 <div class="reveal-left" style="transition-delay: 0.1s">
                     <p class="text-text-secondary leading-relaxed">
-                        Minha jornada começou no IFAL em Informática, passando pela UFAL e agora cursando Ciência da Computação na UNIT.
+                        Minha jornada começou no IFAL em Informática, passando pela UFAL e agora cursando Ciência da Computação na UNIMA.
                         No caminho, acumulei experiência em empresas como <strong class="text-text-primary">XTM Digital</strong> (localização
                         global) e projetos pessoais ambiciosos como o <strong class="text-accent-tertiary">Road to Valhalla</strong> — um
                         Virtual TableTop para RPG de mesa online com +1000 jogadores.
@@ -84,7 +84,7 @@
                         </div>
                         <div>
                             <h4 class="font-medium text-sm">Formação</h4>
-                            <p class="text-text-secondary text-sm">Ciência da Computação — UNIT (cursando)</p>
+                            <p class="text-text-secondary text-sm">Ciência da Computação — UNIMA (cursando)</p>
                         </div>
                     </div>
                 </div>

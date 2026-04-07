@@ -8,7 +8,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
-            {{-- UNIT --}}
+            {{-- UNIMA --}}
             <div class="reveal gradient-border rounded-xl p-6 card-tilt" style="transition-delay: 0.05s">
                 <div class="flex items-center gap-3 mb-4">
                     <div class="w-10 h-10 rounded-lg bg-accent-primary/10 flex items-center justify-center shrink-0">
@@ -17,7 +17,7 @@
                     <span class="px-2 py-0.5 rounded-full bg-green-500/10 text-green-400 text-[0.65rem] font-mono">CURSANDO</span>
                 </div>
                 <h4 class="font-semibold mb-1">Ciência da Computação</h4>
-                <p class="text-accent-primary text-sm font-medium mb-1">UNIT — Universidade Tiradentes</p>
+                <p class="text-accent-primary text-sm font-medium mb-1">UNIMA — Centro Universitário de Maceió (Grupo Afya)</p>
                 <p class="text-text-muted text-xs font-mono mb-3">2023 — 2027</p>
                 <p class="text-text-secondary text-sm leading-relaxed">
                     Bacharelado em Ciência da Computação com foco em engenharia de software e inteligência artificial.

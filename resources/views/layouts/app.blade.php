@@ -27,7 +27,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @livewireStyles
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-dark-primary text-text-primary font-sans antialiased overflow-x-hidden">
 
@@ -49,6 +49,5 @@
         @include('sections.footer')
     </div>
 
-    @livewireScripts
 </body>
 </html>
