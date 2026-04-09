@@ -7,6 +7,65 @@
             <div class="section-line mx-auto"></div>
         </div>
 
+        {{-- Featured Project: Meus Prazos (DESTAQUE PRINCIPAL) --}}
+        <div class="reveal animated-border rounded-2xl p-8 mb-12 glow-accent-hover" style="border-image: linear-gradient(135deg, #a855f7, #6366f1, #3b82f6) 1;">
+            <div class="relative z-10 grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-mono animate-pulse">⭐ DESTAQUE PRINCIPAL</span>
+                        <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-mono">PRODUÇÃO</span>
+                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono">PWA</span>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3 flex items-center gap-3">
+                        <div><img src="/images/meusprazos.png" alt="Meus Prazos" style="width: 30px; border-radius: 6px;"></div>
+                        <div>Meus Prazos</div>
+                    </h3>
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        Plataforma inteligente de gerenciamento unificado de prazos e tarefas. Centraliza deadlines de
+                        <strong class="text-text-primary">6+ plataformas</strong> (Google Calendar, Trello, Bitrix24, Canvas LMS, Notion, GitHub)
+                        em um único dashboard com <strong class="text-text-primary">IA (Google Gemini)</strong> para análise de produtividade,
+                        notificações push inteligentes, board Kanban, e sistema de assinaturas.
+                        PWA instalável com sincronização automática a cada 3 minutos.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge">Laravel 13</span>
+                        <span class="tech-badge">Livewire 3</span>
+                        <span class="tech-badge">Google Gemini</span>
+                        <span class="tech-badge">PWA</span>
+                        <span class="tech-badge">Firebase FCM</span>
+                        <span class="tech-badge">Composio SDK</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">PagarMe</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://organizador.rezumme.ai/" target="_blank" rel="noopener" class="btn-primary text-sm !px-5 !py-2 flex items-center gap-2">
+                            <i class="ph ph-arrow-square-out"></i> Ver Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="glass rounded-xl p-4">
+                        <div class="bg-dark-tertiary rounded-lg overflow-hidden aspect-video flex items-center justify-center relative">
+                            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(99,102,241,0.15), rgba(59,130,246,0.15)); filter: blur(20px);background: url('/images/meus-prazos.png'); background-size: cover; background-position: center; filter: blur(5px);"></div>
+                            <div class="relative text-center p-8">
+                                <i class="text-6xl mb-4 animate-float flex items-center justify-center"><img src="/images/meusprazos.png" alt="Meus Prazos" style="width: 70px; border-radius: 12px;"></i>
+                                <p class="text-text-secondary text-sm font-mono">organizador.rezumme.ai</p>
+                                <div class="flex justify-center gap-5 mt-4 text-text-muted text-xs">
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-calendar-check"></i></strong><br>6+ integrações</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-robot"></i></strong><br>IA Gemini</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-bell-ringing"></i></strong><br>push alerts</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-device-mobile"></i></strong><br>PWA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{-- Featured Project: Road to Valhalla --}}
         <div class="reveal animated-border rounded-2xl p-8 mb-12 glow-accent-hover">
             <div class="relative z-10 grid lg:grid-cols-2 gap-8 items-center">
