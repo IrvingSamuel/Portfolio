@@ -1,4 +1,4 @@
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-500">
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-500 !border-0">
     <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {{-- Logo --}}
         <a href="#hero" class="flex items-center gap-2 group">
@@ -18,11 +18,11 @@
 
         {{-- CTA --}}
         <div class="hidden md:flex items-center gap-4">
-            <a href="https://github.com/IrvingSamuel" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary transition-colors">
-                <i class="ph ph-github-logo text-xl"></i>
+            <a href="https://github.com/IrvingSamuel" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary transition-colors" aria-label="GitHub">
+                <i class="ph ph-github-logo text-xl" aria-hidden="true"></i>
             </a>
-            <a href="https://linkedin.com/in/irving-samuel-lima-bandeira-1733b5156" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary transition-colors">
-                <i class="ph ph-linkedin-logo text-xl"></i>
+            <a href="https://linkedin.com/in/irving-samuel-lima-bandeira-1733b5156" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary transition-colors" aria-label="LinkedIn">
+                <i class="ph ph-linkedin-logo text-xl" aria-hidden="true"></i>
             </a>
             <a href="#contact" class="btn-primary text-sm !px-4 !py-2">Contato</a>
         </div>
@@ -44,8 +44,8 @@
         <a href="#education" class="block text-text-secondary hover:text-text-primary transition-colors">Formação</a>
         <a href="#contact" class="block text-text-secondary hover:text-text-primary transition-colors">Contato</a>
         <div class="flex gap-4 pt-4 border-t border-dark-border">
-            <a href="https://github.com/IrvingSamuel" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary"><i class="ph ph-github-logo text-xl"></i></a>
-            <a href="https://linkedin.com/in/irving-samuel-lima-bandeira-1733b5156" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary"><i class="ph ph-linkedin-logo text-xl"></i></a>
+            <a href="https://github.com/IrvingSamuel" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary" aria-label="GitHub"><i class="ph ph-github-logo text-xl" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/in/irving-samuel-lima-bandeira-1733b5156" target="_blank" rel="noopener" class="text-text-secondary hover:text-text-primary" aria-label="LinkedIn"><i class="ph ph-linkedin-logo text-xl" aria-hidden="true"></i></a>
         </div>
     </div>
 </nav>

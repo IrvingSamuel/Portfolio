@@ -19,7 +19,7 @@
     --color-accent-tertiary: #a855f7;
     --color-text-primary: #f1f5f9;
     --color-text-secondary: #94a3b8;
-    --color-text-muted: #64748b;
+    --color-text-muted: #94a3b8;
 }
 
 /* ═══════ BASE ═══════ */
@@ -107,6 +107,17 @@ body { background-color: var(--color-dark-primary); color: var(--color-text-prim
 
 /* ═══════ SECTION LINE ═══════ */
 .section-line { width: 60px; height: 3px; background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary)); border-radius: 9999px; }
+
+/* ═══════ FOCUS VISIBLE ═══════ */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid var(--color-accent-secondary);
+    outline-offset: 3px;
+}
 
 /* ═══════ HAMBURGER ═══════ */
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--color-text-primary); transition: all 0.3s ease; border-radius: 2px; }

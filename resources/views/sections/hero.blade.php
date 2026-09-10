@@ -33,7 +33,7 @@
 
         {{-- Description --}}
         <p class="reveal text-text-secondary max-w-2xl mx-auto mb-10 text-lg leading-relaxed" style="transition-delay: 0.4s">
-            Engenheiro de Software com <span class="text-text-primary font-medium">+5 anos</span> construindo
+            Engenheiro de Software com <span class="text-text-primary font-medium">+{{ $yearsOfExperience }} anos</span> construindo
             aplicações escaláveis com <span class="text-accent-primary font-medium">PHP/Laravel</span>,
             <span class="text-accent-secondary font-medium">Node.js</span> e
             <span class="text-accent-tertiary font-medium">arquiteturas modernas</span>.
@@ -54,11 +54,11 @@
         {{-- Quick Stats --}}
         <div class="reveal grid grid-cols-2 sm:grid-cols-4 gap-6 mt-16 max-w-2xl mx-auto" style="transition-delay: 0.6s">
             <div class="text-center">
-                <div class="text-2xl font-bold gradient-text">+5</div>
+                <div class="text-2xl font-bold gradient-text">+{{ $yearsOfExperience }}</div>
                 <div class="text-xs text-text-muted mt-1 font-mono">anos exp.</div>
             </div>
             <div class="text-center">
-                <div class="text-2xl font-bold gradient-text">28+</div>
+                <div class="text-2xl font-bold gradient-text">{{ $totalRepos }}+</div>
                 <div class="text-xs text-text-muted mt-1 font-mono">repositórios</div>
             </div>
             <div class="text-center">
@@ -66,7 +66,7 @@
                 <div class="text-xs text-text-muted mt-1 font-mono">usuários ativos</div>
             </div>
             <div class="text-center">
-                <div class="text-2xl font-bold gradient-text">424+</div>
+                <div class="text-2xl font-bold gradient-text">{{ $maxYearlyContributions }}+</div>
                 <div class="text-xs text-text-muted mt-1 font-mono">contribuições/ano</div>
             </div>
         </div>
@@ -74,9 +74,9 @@
 
     {{-- Scroll indicator --}}
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-scroll-bounce">
-        <a href="#about" class="flex flex-col items-center gap-2 text-text-muted hover:text-text-primary transition-colors">
+        <a href="#about" class="flex flex-col items-center gap-2 text-text-muted hover:text-text-primary transition-colors" aria-label="Rolar para a seção Sobre">
             <span class="text-xs font-mono">scroll</span>
-            <i class="ph ph-caret-down text-lg"></i>
+            <i class="ph ph-caret-down text-lg" aria-hidden="true"></i>
         </a>
     </div>
 </section>

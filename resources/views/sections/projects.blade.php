@@ -210,11 +210,11 @@
                             <i class="ph ph-cloud-sun text-lg text-accent-secondary"></i>
                         </div>
                         <div class="flex items-center gap-3">
-                            <a href="https://irvingsamuel.github.io/Weather-APP-UI/" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors">
-                                <i class="ph ph-arrow-square-out text-xl"></i>
+                            <a href="https://irvingsamuel.github.io/Weather-APP-UI/" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors" aria-label="Abrir Weather APP">
+                                <i class="ph ph-arrow-square-out text-xl" aria-hidden="true"></i>
                             </a>
-                            <a href="https://github.com/IrvingSamuel/Weather-APP-UI" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors">
-                                <i class="ph ph-github-logo text-xl"></i>
+                            <a href="https://github.com/IrvingSamuel/Weather-APP-UI" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors" aria-label="GitHub do Weather APP">
+                                <i class="ph ph-github-logo text-xl" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -239,11 +239,11 @@
                             <i class="ph ph-rocket text-lg text-accent-tertiary"></i>
                         </div>
                         <div class="flex items-center gap-3">
-                            <a href="https://eflow.space/" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors">
-                                <i class="ph ph-arrow-square-out text-xl"></i>
+                            <a href="https://eflow.space/" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors" aria-label="Abrir SpaceFlow Login">
+                                <i class="ph ph-arrow-square-out text-xl" aria-hidden="true"></i>
                             </a>
-                            <a href="https://github.com/IrvingSamuel/wildcard-login" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors">
-                                <i class="ph ph-github-logo text-xl"></i>
+                            <a href="https://github.com/IrvingSamuel/wildcard-login" target="_blank" rel="noopener" class="text-text-muted hover:text-text-primary transition-colors" aria-label="GitHub do SpaceFlow Login">
+                                <i class="ph ph-github-logo text-xl" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
