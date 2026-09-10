@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Irving Samuel - Backend Software Engineer | PHP Laravel Senior Developer | Technology & AI Consultant">
-    <meta name="keywords" content="Irving Samuel, Backend Developer, PHP, Laravel, Software Engineer, Full-Stack">
     <meta name="author" content="Irving Samuel Lima Bandeira">
+    <link rel="canonical" href="https://irving.roadtovalhalla.com.br/">
+    @stack('head')
 
     {{-- Open Graph --}}
     <meta property="og:title" content="Irving Samuel — Senior Backend Engineer">
     <meta property="og:description" content="Backend Software Engineer | PHP Laravel Senior Developer | Technology & AI Consultant">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/39782826">
+    <meta property="og:url" content="https://irving.roadtovalhalla.com.br/">
+    <meta property="og:image" content="https://irving.roadtovalhalla.com.br/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    {{-- Twitter --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Irving Samuel — Senior Backend Engineer">
+    <meta name="twitter:description" content="Backend Software Engineer | PHP Laravel Senior Developer | Technology & AI Consultant">
+    <meta name="twitter:image" content="https://irving.roadtovalhalla.com.br/images/og-cover.png">
 
     <title>Irving Samuel — Senior Backend Engineer</title>
 
@@ -24,10 +35,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     {{-- Phosphor Icons --}}
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script defer src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <script type="application/ld+json">
+    {!! json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'Person',
+        'name' => 'Irving Samuel Lima Bandeira',
+        'url' => 'https://irving.roadtovalhalla.com.br/',
+        'image' => 'https://irving.roadtovalhalla.com.br/images/og-cover.png',
+        'jobTitle' => 'Senior Backend Engineer',
+        'description' => 'Backend Software Engineer, PHP Laravel Senior Developer and Technology & AI Consultant.',
+        'email' => 'mailto:sync.irvingsamuel@gmail.com',
+        'worksFor' => [
+            '@type' => 'Organization',
+            'name' => 'Next Opinion',
+        ],
+        'alumniOf' => [
+            [
+                '@type' => 'CollegeOrUniversity',
+                'name' => 'UNIMA — Centro Universitário de Maceió (Grupo Afya)',
+            ],
+            [
+                '@type' => 'CollegeOrUniversity',
+                'name' => 'UFAL — Universidade Federal de Alagoas',
+            ],
+            [
+                '@type' => 'EducationalOrganization',
+                'name' => 'IFAL — Instituto Federal de Alagoas',
+            ],
+        ],
+        'sameAs' => [
+            'https://github.com/IrvingSamuel',
+            'https://linkedin.com/in/irving-samuel-lima-bandeira-1733b5156',
+            'https://instagram.com/irving.sbandeira',
+        ],
+        'knowsAbout' => ['PHP', 'Laravel', 'Node.js', 'Artificial Intelligence', 'Software Engineering'],
+    ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
+    </script>
 </head>
 <body class="bg-dark-primary text-text-primary font-sans antialiased overflow-x-hidden">
 
@@ -40,13 +88,17 @@
 
     {{-- Content --}}
     <div class="relative z-10">
-        @include('sections.navbar')
+        @unless(request()->routeIs('vagas.*'))
+            @include('sections.navbar')
+        @endunless
 
         <main>
             @yield('content')
         </main>
 
-        @include('sections.footer')
+        @unless(request()->routeIs('vagas.*'))
+            @include('sections.footer')
+        @endunless
     </div>
 
 </body>
