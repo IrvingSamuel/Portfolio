@@ -10,11 +10,13 @@ Route::get('/', function () {
         ?? Cache::get('github-stats:last-good')
         ?? [];
 
-    return view('welcome', [
-        'yearsOfExperience' => now()->year - 2021,
-        'totalRepos' => $githubStats['total_repos'] ?? $githubStats['public_repos'] ?? 40,
-        'maxYearlyContributions' => $githubStats['max_yearly_contributions'] ?? 1000,
-    ]);
+    return response()
+        ->view('welcome', [
+            'yearsOfExperience' => now()->year - 2021,
+            'totalRepos' => $githubStats['total_repos'] ?? $githubStats['public_repos'] ?? 40,
+            'maxYearlyContributions' => $githubStats['max_yearly_contributions'] ?? 1000,
+        ])
+        ->header('Cache-Control', 'public, max-age=0, must-revalidate');
 });
 
 Route::get('/api/github-stats', [GitHubController::class, 'stats']);
