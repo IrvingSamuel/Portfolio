@@ -42,11 +42,15 @@
         {{-- CTAs --}}
         <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4" style="transition-delay: 0.5s">
             <a href="#projects" class="btn-primary flex items-center gap-2">
-                <i class="ph ph-code text-lg"></i>
+                <i class="ph ph-code text-lg" aria-hidden="true"></i>
                 Ver Projetos
             </a>
+            <a href="/CV-Irving-Samuel-Aplicacoes.pdf" download class="btn-outline flex items-center gap-2">
+                <i class="ph ph-file-pdf text-lg" aria-hidden="true"></i>
+                Baixar CV
+            </a>
             <a href="#contact" class="btn-outline flex items-center gap-2">
-                <i class="ph ph-envelope text-lg"></i>
+                <i class="ph ph-envelope text-lg" aria-hidden="true"></i>
                 Entrar em Contato
             </a>
         </div>
@@ -63,7 +67,7 @@
             </div>
             <div class="text-center">
                 <div class="text-2xl font-bold gradient-text">1000+</div>
-                <div class="text-xs text-text-muted mt-1 font-mono">usuários ativos</div>
+                <div class="text-xs text-text-muted mt-1 font-mono">jogadores no<br>Road to Valhalla</div>
             </div>
             <div class="text-center">
                 <div class="text-2xl font-bold gradient-text">{{ $maxYearlyContributions }}+</div>

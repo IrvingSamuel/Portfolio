@@ -174,6 +174,124 @@
             </div>
         </div>
 
+        {{-- Featured Project: Chronos --}}
+        <div class="reveal animated-border rounded-2xl p-8 mb-12 glow-accent-hover">
+            <div class="relative z-10 grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-mono">DESTAQUE</span>
+                        <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-mono">PRODUÇÃO</span>
+                        <span class="px-3 py-1 rounded-full bg-accent-primary/10 text-accent-primary text-xs font-mono">AI</span>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3 flex items-center gap-3">
+                        <div class="w-[30px] h-[30px] rounded-md bg-amber-500/15 flex items-center justify-center">
+                            <i class="ph ph-kanban text-lg text-amber-400" aria-hidden="true"></i>
+                        </div>
+                        <div>Chronos</div>
+                    </h3>
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        Ecossistema de produtividade e AI consulting com domínio próprio
+                        <strong class="text-text-primary">chronos.com.pt</strong>: quadros Kanban, automations,
+                        <strong class="text-text-primary">chronos-ide</strong> (C++) e extensão
+                        <strong class="text-text-primary">chronos-vscode</strong> (TypeScript) que levam tarefas e Chronos AI para dentro da IDE.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">C++</span>
+                        <span class="tech-badge">VS Code</span>
+                        <span class="tech-badge">AI Agents</span>
+                        <span class="tech-badge">Kanban</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://chronos.com.pt" target="_blank" rel="noopener" class="btn-primary text-sm !px-5 !py-2 flex items-center gap-2">
+                            <i class="ph ph-arrow-square-out" aria-hidden="true"></i> Ver Projeto
+                        </a>
+                        <a href="https://github.com/IrvingSamuel/chronos-vscode" target="_blank" rel="noopener" class="btn-outline text-sm !px-5 !py-2 flex items-center gap-2">
+                            <i class="ph ph-github-logo" aria-hidden="true"></i> chronos-vscode
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="glass rounded-xl p-4">
+                        <div class="bg-dark-tertiary rounded-lg overflow-hidden aspect-video flex items-center justify-center relative">
+                            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(245,158,11,0.18), rgba(99,102,241,0.15), rgba(34,211,238,0.12));"></div>
+                            <div class="relative text-center p-8">
+                                <i class="ph ph-kanban text-6xl text-amber-400 mb-4 animate-float" aria-hidden="true"></i>
+                                <p class="text-text-secondary text-sm font-mono">chronos.com.pt</p>
+                                <div class="flex justify-center gap-6 mt-4 text-text-muted text-xs">
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-code" aria-hidden="true"></i></strong><br>IDE C++</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-puzzle-piece" aria-hidden="true"></i></strong><br>VS Code</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-robot" aria-hidden="true"></i></strong><br>Chronos AI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Featured Project: openmeet --}}
+        <div class="reveal animated-border rounded-2xl p-8 mb-12 glow-accent-hover">
+            <div class="relative z-10 grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono">DESTAQUE</span>
+                        <span class="px-3 py-1 rounded-full bg-yellow-500/10 text-yellow-400 text-xs font-mono">★ 5 STARS</span>
+                        <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-mono">OPEN SOURCE</span>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-3 flex items-center gap-3">
+                        <div class="w-[30px] h-[30px] rounded-md bg-cyan-500/15 flex items-center justify-center">
+                            <i class="ph ph-video-camera text-lg text-cyan-400" aria-hidden="true"></i>
+                        </div>
+                        <div>openmeet</div>
+                    </h3>
+                    <p class="text-text-secondary leading-relaxed mb-6">
+                        Videoconferência <strong class="text-text-primary">white-label open-source</strong> com
+                        <strong class="text-text-primary">LiveKit</strong>, legendas ao vivo e um copiloto de IA que transforma
+                        reuniões em tarefas do Chronos — ponte direta entre comunicação e execução.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="tech-badge">LiveKit</span>
+                        <span class="tech-badge">WebRTC</span>
+                        <span class="tech-badge">AI Copilot</span>
+                        <span class="tech-badge">Captions</span>
+                        <span class="tech-badge">White-label</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://openmeet.chronos.com.pt" target="_blank" rel="noopener" class="btn-primary text-sm !px-5 !py-2 flex items-center gap-2">
+                            <i class="ph ph-arrow-square-out" aria-hidden="true"></i> Ver Projeto
+                        </a>
+                        <a href="https://github.com/IrvingSamuel/openmeet" target="_blank" rel="noopener" class="btn-outline text-sm !px-5 !py-2 flex items-center gap-2">
+                            <i class="ph ph-github-logo" aria-hidden="true"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="glass rounded-xl p-4">
+                        <div class="bg-dark-tertiary rounded-lg overflow-hidden aspect-video flex items-center justify-center relative">
+                            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(34,211,238,0.18), rgba(99,102,241,0.15), rgba(168,85,247,0.12));"></div>
+                            <div class="relative text-center p-8">
+                                <i class="ph ph-video-camera text-6xl text-cyan-400 mb-4 animate-float" aria-hidden="true"></i>
+                                <p class="text-text-secondary text-sm font-mono">openmeet.chronos.com.pt</p>
+                                <div class="flex justify-center gap-6 mt-4 text-text-muted text-xs">
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-broadcast" aria-hidden="true"></i></strong><br>LiveKit</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-closed-captioning" aria-hidden="true"></i></strong><br>legendas</span>
+                                    <span><strong class="text-text-primary text-lg"><i class="ph ph-robot" aria-hidden="true"></i></strong><br>copiloto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{-- Other Projects Grid --}}
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {{-- Agendamento --}}
