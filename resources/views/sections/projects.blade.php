@@ -17,7 +17,7 @@
                         <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono">PWA</span>
                     </div>
                     <h3 class="text-2xl sm:text-3xl font-bold mb-3 flex items-center gap-3">
-                        <div><img src="/images/meusprazos.png" alt="Meus Prazos" style="width: 30px; border-radius: 6px;"></div>
+                        <div><img src="/images/meusprazos.png" alt="Logo Meus Prazos" width="30" height="30" loading="lazy" decoding="async" style="width: 30px; border-radius: 6px;"></div>
                         <div>Meus Prazos</div>
                     </h3>
                     <p class="text-text-secondary leading-relaxed mb-6">
@@ -51,7 +51,7 @@
                         <div class="bg-dark-tertiary rounded-lg overflow-hidden aspect-video flex items-center justify-center relative">
                             <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(99,102,241,0.15), rgba(59,130,246,0.15)); filter: blur(20px);background: url('/images/meus-prazos.png'); background-size: cover; background-position: center; filter: blur(5px);"></div>
                             <div class="relative text-center p-8">
-                                <i class="text-6xl mb-4 animate-float flex items-center justify-center"><img src="/images/meusprazos.png" alt="Meus Prazos" style="width: 70px; border-radius: 12px;"></i>
+                                <i class="text-6xl mb-4 animate-float flex items-center justify-center"><img src="/images/meusprazos.png" alt="Logo Meus Prazos" width="70" height="70" loading="lazy" decoding="async" style="width: 70px; border-radius: 12px;"></i>
                                 <p class="text-text-secondary text-sm font-mono">meusprazos.rezumme.ai</p>
                                 <div class="flex justify-center gap-5 mt-4 text-text-muted text-xs">
                                     <span><strong class="text-text-primary text-lg"><i class="ph ph-calendar-check"></i></strong><br>6+ integrações</span>
@@ -75,7 +75,7 @@
                         <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-mono">PRODUÇÃO</span>
                     </div>
                     <h3 class="text-2xl sm:text-3xl font-bold mb-3 flex items-center gap-3">
-                        <div><img src="https://roadtovalhalla.com.br/assets/system/icon.png" alt="" style="width: 30px"></div>
+                        <div><img src="/images/rtv-icon-60.webp" alt="Logo Road to Valhalla" width="30" height="30" loading="lazy" decoding="async" style="width: 30px"></div>
                         <div>Road to Valhalla</div>
                     </h3>
                     <p class="text-text-secondary leading-relaxed mb-6">
@@ -105,7 +105,7 @@
                         <div class="bg-dark-tertiary rounded-lg overflow-hidden aspect-video flex items-center justify-center relative">
                             <div class="absolute inset-0" style="background: url('/images/road.png'); background-size: cover; background-position: center; filter: blur(5px);"></div>
                             <div class="relative text-center p-8">
-                                <i class="text-6xl text-accent-tertiary mb-4 animate-float flex items-center justify-center"><img src="https://roadtovalhalla.com.br/assets/system/icon.png" alt="" style="width: 70px"></i>
+                                <i class="text-6xl text-accent-tertiary mb-4 animate-float flex items-center justify-center"><img src="/images/rtv-icon-140.webp" alt="Logo Road to Valhalla" width="70" height="70" loading="lazy" decoding="async" style="width: 70px"></i>
                                 <p class="text-text-secondary text-sm font-mono">roadtovalhalla.com.br</p>
                                 <div class="flex justify-center gap-6 mt-4 text-text-muted text-xs">
                                     <span><strong class="text-text-primary text-lg">350+</strong><br>mesas</span>
@@ -128,7 +128,7 @@
                         <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-mono">PRODUÇÃO</span>
                     </div>
                     <h3 class="text-2xl sm:text-3xl font-bold mb-3 flex items-center gap-3">
-                        <div><img src="https://rezum.me/umi-profile-blue.svg" alt="" style="width: 30px"></div>
+                        <div><img src="/images/rezumme-logo.svg" alt="Logo Rezumme" width="30" height="30" loading="lazy" decoding="async" style="width: 30px"></div>
                         <div>Rezumme</div>
                     </h3>
                     <p class="text-text-secondary leading-relaxed mb-6">
@@ -159,7 +159,7 @@
                         <div class="bg-dark-tertiary rounded-lg overflow-hidden aspect-video flex items-center justify-center relative">
                             <div class="absolute inset-0" style="background: url('/images/rezumme.png'); background-size: cover; background-position: center; filter: blur(5px);"></div>
                             <div class="relative text-center p-8">
-                                <i class="text-6xl text-accent-secondary mb-4 animate-float flex items-center justify-center"><img src="https://rezum.me/umi-profile-blue.svg" alt="" style="width: 70px"></i>
+                                <i class="text-6xl text-accent-secondary mb-4 animate-float flex items-center justify-center"><img src="/images/rezumme-logo.svg" alt="Logo Rezumme" width="70" height="70" loading="lazy" decoding="async" style="width: 70px"></i>
                                 <p class="text-text-secondary text-sm font-mono">rezum.me</p>
                                 <div class="flex justify-center gap-6 mt-4 text-text-muted text-xs">
                                     <span><strong class="text-text-primary text-lg"><i class="ph ph-microphone"></i></strong><br>áudio</span>
