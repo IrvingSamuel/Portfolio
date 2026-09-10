@@ -1,4 +1,9 @@
 import './bootstrap';
+import Alpine from 'alpinejs';
+import '@phosphor-icons/web/regular';
+
+window.Alpine = Alpine;
+Alpine.start();
 
 /* ═══════════════════════════════════════════
    SCROLL REVEAL (IntersectionObserver)
