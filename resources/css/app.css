@@ -26,6 +26,7 @@
 html { scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--color-accent-primary) var(--color-dark-primary); }
 body { background-color: var(--color-dark-primary); color: var(--color-text-primary); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
 ::selection { background-color: rgba(99,102,241,0.3); color: var(--color-text-primary); }
+[x-cloak] { display: none !important; }
 
 /* ═══════ DOT GRID ═══════ */
 .bg-dot-grid { background-image: radial-gradient(circle, rgba(99,102,241,0.15) 1px, transparent 1px); background-size: 30px 30px; }
