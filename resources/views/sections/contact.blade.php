@@ -89,8 +89,17 @@
                     </div>
                 @endif
 
-                <form action="{{ route('contact.send') }}" method="POST" class="space-y-5">
+                <form action="{{ route('contact.send') }}" method="POST" class="space-y-5 relative">
                     @csrf
+
+                    {{-- Honeypot fields (hidden from humans, filled by bots) --}}
+                    <div class="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden opacity-0" aria-hidden="true">
+                        <label for="contact-website">Website</label>
+                        <input type="text" id="contact-website" name="website" value="" tabindex="-1" autocomplete="off">
+                        <label for="contact-company">Company</label>
+                        <input type="text" id="contact-company" name="company" value="" tabindex="-1" autocomplete="off">
+                    </div>
+
                     <div>
                         <label for="contact-name" class="block text-sm font-medium mb-2">Nome</label>
                         <input type="text" id="contact-name" name="name" placeholder="Seu nome" value="{{ old('name') }}" autocomplete="name"

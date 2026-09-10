@@ -20,4 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get('/api/github-stats', [GitHubController::class, 'stats']);
-Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+Route::post('/contact', [ContactController::class, 'send'])
+    ->middleware('throttle:5,1')
+    ->name('contact.send');

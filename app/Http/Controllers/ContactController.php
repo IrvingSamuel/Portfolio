@@ -10,6 +10,11 @@ class ContactController extends Controller
 {
     public function send(Request $request)
     {
+        // Honeypot: bots fill hidden fields; humans leave them empty.
+        if (filled($request->input('website')) || filled($request->input('company'))) {
+            return back()->with('success', 'Mensagem enviada com sucesso!');
+        }
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
